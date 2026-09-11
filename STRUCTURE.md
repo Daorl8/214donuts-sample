@@ -21,7 +21,7 @@
 
 ## 디자인
 - 팔레트: 크래프트 베이지 #EFE4CE · 잉크 #22190F · 브랜드 레드 #C5372C(텍스트용 --red-d #A5271E) · 그린 #2E5A3B · 주황 액센트 #E08A2B. (실제 브랜드 컬러 = 초록 214 DONUT + 빨강 OPEN + 크래프트, 요청과 일치)
-- 폰트: Archivo(GHEA Aram/Narek 대체 — GHEA 무료 CDN 없음) + Space Mono(라벨/숫자) + Pretendard(한글). 각진 에디토리얼(border-radius 0, 2px 검정 테두리, 대문자, 마퀴, 그림자 오프셋 버튼).
+- 폰트: **Fraunces(디스플레이, 우아한 세리프 이탤릭 — 다올 "고급지다=첨부 사진 라벨 느낌"=세리프 이탤릭)** + Archivo(본문·"214"숫자박스) + Space Mono(라벨) + Pretendard(한글). 각진 에디토리얼(border-radius 0, 2px 검정 테두리, 그림자 오프셋 버튼) + 흐르는 세리프 이탤릭 제목의 대비. ⚠️마퀴 제거(v0.2). GHEA Aram/Narek는 무료 CDN 없음(파일 주면 교체 가능하나 다올 취향=세리프 이탤릭).
 - 강제 리빌 + noscript 폴백 + 1.5s 타임아웃, rAF 강제 스무스 스크롤.
 
 ## ⚠️ 교체 대상 / 확인 필요 (납품 전)

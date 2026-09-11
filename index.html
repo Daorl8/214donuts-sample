@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23C5372C'/%3E%3Ctext x='16' y='22' font-family='Archivo,Arial,sans-serif' font-size='15' font-weight='900' text-anchor='middle' fill='%23EFE4CE'%3E214%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23A5271E'/%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23EFE4CE' stroke-width='1' opacity='0.55'/%3E%3Ctext x='16' y='21' font-family='Georgia,serif' font-style='italic' font-size='14' font-weight='700' text-anchor='middle' fill='%23EFE4CE'%3E214%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Bakery","name":"214 Donuts","alternateName":"214도넛","description":"Chuncheon small-batch bakery specializing in filled doughnuts made from scratch — domestic flour, cultured butter and a 16-hour cold-fermented dough, fried fresh and sold the same day.","image":"https://214donuts.pages.dev/dn-hero.webp","servesCuisine":["Bakery","Doughnuts","Coffee","Dessert"],"priceRange":"₩₩","telephone":"+82-507-1490-1643","url":"https://214donuts.pages.dev/","address":{"@type":"PostalAddress","streetAddress":"서부대성로 196, 1층","addressLocality":"춘천시","addressRegion":"강원특별자치도","addressCountry":"KR"}}
 </script>
@@ -25,7 +25,7 @@
  --ink:#22190F; --ink2:#5A4C38; --faint:#8C7B60;
  --red:#C5372C; --red-d:#A5271E; --green:#2E5A3B; --green-d:#22452D;
  --tan:#B58748; --orange:#E08A2B;
- --line:#2A2013; --line-soft:#D8C7A4;
+ --line:#4A3A28; --line-soft:#D8C7A4;
  --bar:70px; --ease:cubic-bezier(.4,0,.15,1);
  --disp:'Fraunces','Pretendard Variable',Georgia,serif;
  --sans:'Archivo','Pretendard Variable',system-ui,-apple-system,sans-serif;
@@ -40,7 +40,7 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
 .mono{font-family:var(--mono)}
 h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.05;letter-spacing:-.015em}
-.eyebrow{font-family:var(--mono);font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red-d)}
+.eyebrow{font-family:var(--disp);font-style:italic;font-size:1.05rem;font-weight:600;letter-spacing:.005em;color:var(--red-d)}
 /* buttons — angular */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:50px;padding:0 24px;font-family:var(--mono);font-weight:700;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;border:2px solid var(--line);color:var(--ink);background:transparent;border-radius:0;transition:transform .15s var(--ease),background .18s,color .18s}
 .btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--line)}
@@ -82,12 +82,20 @@ h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.05;letter-spacing
 .hero-media{position:relative;border:2px solid var(--line);background:var(--card)}
 .hero-media img{width:100%;aspect-ratio:4/4.3;object-fit:cover}
 .hero-media .tagstrip{position:absolute;left:0;bottom:0;right:0;background:var(--red-d);color:var(--paper);font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;display:flex;justify-content:space-between;gap:10px;border-top:2px solid var(--line)}
+/* heritage pass (A) — wax seal + softer corners */
+.seal{display:block}
+.hero-media .seal{position:absolute;top:-24px;right:-16px;width:100px;height:100px;z-index:3;filter:drop-shadow(0 5px 9px rgba(58,30,20,.28))}
+.foot .seal{width:76px;height:76px;margin-bottom:16px}
+.btn{border-radius:4px}
+.hero-media,.craft-media,.gfig,.visit-media,.vcard,.chan{border-radius:5px}
 /* section frame */
 .sec{padding:76px 0;border-bottom:2px solid var(--line)}
 .sec-head{max-width:52rem}
 .sec-head .eyebrow{display:block;margin-bottom:14px}
 .sec-head h2{font-size:clamp(2rem,5.5vw,3.5rem);font-weight:700}
 .sec-head p{margin-top:16px;color:var(--ink2);max-width:40rem;line-height:1.7}
+.kr{display:block;font-family:'Pretendard Variable',var(--sans);font-size:.9rem;color:var(--ink2);margin-top:9px;line-height:1.65;letter-spacing:0;word-break:keep-all}
+.hero .lead .kr{color:var(--ink2)}
 /* craft */
 .craft-grid{display:grid;grid-template-columns:1fr;gap:36px;margin-top:44px;align-items:start}
 .craft-media{border:2px solid var(--line);background:var(--card)}
@@ -197,13 +205,14 @@ html.js .rv.in{opacity:1;transform:none}
       <div class="hero-txt rv">
         <span class="eyebrow">Chuncheon · Bakery &amp; Coffee · Est.</span>
         <h1>Doughnuts,<em>from scratch.</em></h1>
-        <p class="lead">Small-batch filled doughnuts, fried fresh every morning. No instant mixes, no shortcuts — just domestic flour, cultured butter, and a dough we cold-ferment for sixteen hours. Made and sold the same day.</p>
+        <p class="lead">Small-batch filled doughnuts, fried fresh every morning. No instant mixes, no shortcuts — just domestic flour, cultured butter, and a dough we cold-ferment for sixteen hours. Made and sold the same day.<span class="kr">매일 아침 갓 튀겨 속을 채우는 소량생산 수제 도넛. 인스턴트 믹스 없이 국산 밀가루·발효버터로 16시간 저온숙성해, 당일 만들어 당일 판매합니다.</span></p>
         <div class="hero-cta">
           <a class="btn btn-red" href="#donuts">See the doughnuts</a>
           <a class="btn" href="#visit">Find us</a>
         </div>
       </div>
       <div class="hero-media rv">
+        <svg class="seal" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" fill="#A5271E"/><circle cx="60" cy="60" r="54" fill="none" stroke="#EFE4CE" stroke-width="2.5" stroke-dasharray="1.5 6" opacity=".55"/><circle cx="60" cy="60" r="44" fill="none" stroke="#EFE4CE" stroke-width="1.2" opacity=".5"/><text x="60" y="70" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-style="italic" font-weight="700" font-size="38" fill="#EFE4CE">214</text><text x="60" y="88" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" letter-spacing="3" fill="#EFE4CE" opacity=".8">DOUGHNUTS</text></svg>
         <img src="dn-hero.webp" alt="A red 214 Donuts box filled with sugar-dusted cream doughnuts" fetchpriority="high">
         <div class="tagstrip"><span>214 Donuts</span><span>Chuncheon</span></div>
       </div>
@@ -217,7 +226,7 @@ html.js .rv.in{opacity:1;transform:none}
     <div class="sec-head rv">
       <span class="eyebrow">The Craft</span>
       <h2>Made from scratch, sold same day</h2>
-      <p>Every morning starts with fresh ingredients, real toppings, and a little happiness folded into the dough. We don't use instant doughnut mixes — and we never keep yesterday's batch.</p>
+      <p>Every morning starts with fresh ingredients, real toppings, and a little happiness folded into the dough. We don't use instant doughnut mixes — and we never keep yesterday's batch.<span class="kr">매일 아침 신선한 재료와 진짜 토핑으로 시작합니다. 인스턴트 도넛 믹스는 쓰지 않고, 어제 만든 건 남기지 않아요.</span></p>
     </div>
     <div class="craft-grid">
       <div class="craft-media rv"><img src="dn-craft.webp" alt="A filled doughnut cut open to show the cream centre, set against a vintage advert"></div>
@@ -240,7 +249,7 @@ html.js .rv.in{opacity:1;transform:none}
     <div class="sec-head rv">
       <span class="eyebrow">The Counter</span>
       <h2>Today's doughnuts</h2>
-      <p>Cream-filled, glaze-dipped and dusted — the lineup rotates with what's fresh. Here's a taste of the counter.</p>
+      <p>Cream-filled, glaze-dipped and dusted — the lineup rotates with what's fresh. Here's a taste of the counter.<span class="kr">크림을 채우고 글레이즈를 입히고 슈가파우더를 뿌린 도넛 — 그날 신선한 재료에 따라 라인업이 매일 바뀝니다.</span></p>
     </div>
     <div class="ggrid rv">
       <figure class="gfig feat2"><img src="dn-biscoff.webp" alt="A cream-filled doughnut topped with a Biscoff biscuit on a yellow plate" loading="lazy"><figcaption>Cream · Filled</figcaption></figure>
@@ -259,7 +268,7 @@ html.js .rv.in{opacity:1;transform:none}
     <div class="sec-head rv">
       <span class="eyebrow">Visit</span>
       <h2>Come by</h2>
-      <p>214 Donuts is moving to a new home nearby. We reopen mid-September — the details below are our Chuncheon base; follow Instagram for the confirmed new address.</p>
+      <p>214 Donuts is moving to a new home nearby. We reopen mid-September — the details below are our Chuncheon base; follow Instagram for the confirmed new address.<span class="kr">214도넛은 근처 새 자리로 이전 준비 중이에요. 9월 중순 재오픈 예정이며, 확정 주소는 인스타그램에서 안내합니다.</span></p>
     </div>
     <div class="visit-grid">
       <div class="rv">
@@ -285,7 +294,7 @@ html.js .rv.in{opacity:1;transform:none}
     <div class="sec-head rv">
       <span class="eyebrow">Contact</span>
       <h2>Say hello</h2>
-      <p>New flavours, boxes and reopening news land on Instagram first.</p>
+      <p>New flavours, boxes and reopening news land on Instagram first.<span class="kr">새 메뉴와 박스, 재오픈 소식은 인스타그램에 가장 먼저 올라옵니다.</span></p>
     </div>
     <div class="chan rv">
       <a href="https://www.instagram.com/214_donuts/" target="_blank" rel="noopener">
@@ -311,6 +320,7 @@ html.js .rv.in{opacity:1;transform:none}
 <!-- FOOTER -->
 <footer class="foot">
   <div class="wrap">
+    <svg class="seal" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" fill="#A5271E"/><circle cx="60" cy="60" r="54" fill="none" stroke="#EFE4CE" stroke-width="2.5" stroke-dasharray="1.5 6" opacity=".55"/><circle cx="60" cy="60" r="44" fill="none" stroke="#EFE4CE" stroke-width="1.2" opacity=".5"/><text x="60" y="70" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-style="italic" font-weight="700" font-size="38" fill="#EFE4CE">214</text><text x="60" y="88" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" letter-spacing="3" fill="#EFE4CE" opacity=".8">DOUGHNUTS</text></svg>
     <div class="fmk"><span class="n">214</span>Donuts</div>
     <div class="fgrid">
       <div><b>Where</b>강원특별자치도 춘천시 서부대성로 196, 1층<br>Seobudaeseong-ro 196, 1F · Chuncheon · <a href="https://map.naver.com/p/entry/place/1908467449" target="_blank" rel="noopener">Naver Map</a></div>
