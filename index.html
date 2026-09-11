@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>214 Donuts — Small-batch filled doughnuts, Chuncheon</title>
+<meta name="description" content="214 Donuts (214도넛), Chuncheon. Small-batch filled doughnuts made from scratch — domestic flour, cultured butter, 16-hour cold-fermented dough. Fried fresh and sold the same day.">
+<meta name="theme-color" content="#EFE4CE">
+<meta property="og:type" content="website">
+<meta property="og:title" content="214 Donuts — Small-batch filled doughnuts, Chuncheon">
+<meta property="og:description" content="Made from scratch, filled fresh, sold same day. Domestic flour · cultured butter · 16-hour cold-fermented dough.">
+<meta property="og:image" content="https://214donuts.pages.dev/dn-hero.webp">
+<meta property="og:url" content="https://214donuts.pages.dev/">
+<link rel="canonical" href="https://214donuts.pages.dev/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23C5372C'/%3E%3Ctext x='16' y='22' font-family='Archivo,Arial,sans-serif' font-size='15' font-weight='900' text-anchor='middle' fill='%23EFE4CE'%3E214%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Bakery","name":"214 Donuts","alternateName":"214도넛","description":"Chuncheon small-batch bakery specializing in filled doughnuts made from scratch — domestic flour, cultured butter and a 16-hour cold-fermented dough, fried fresh and sold the same day.","image":"https://214donuts.pages.dev/dn-hero.webp","servesCuisine":["Bakery","Doughnuts","Coffee","Dessert"],"priceRange":"₩₩","telephone":"+82-507-1490-1643","url":"https://214donuts.pages.dev/","address":{"@type":"PostalAddress","streetAddress":"서부대성로 196, 1층","addressLocality":"춘천시","addressRegion":"강원특별자치도","addressCountry":"KR"}}
+</script>
+<style>
+:root{
+ --paper:#EFE4CE; --paper2:#E7D8BB; --card:#F6EFDE; --card2:#F0E6CF;
+ --ink:#22190F; --ink2:#5A4C38; --faint:#8C7B60;
+ --red:#C5372C; --red-d:#A5271E; --green:#2E5A3B; --green-d:#22452D;
+ --tan:#B58748; --orange:#E08A2B;
+ --line:#2A2013; --line-soft:#D8C7A4;
+ --bar:70px; --ease:cubic-bezier(.4,0,.15,1);
+ --disp:'Archivo','Pretendard Variable',system-ui,sans-serif;
+ --sans:'Archivo','Pretendard Variable',system-ui,-apple-system,sans-serif;
+ --mono:'Space Mono','Courier New',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:auto;scroll-padding-top:var(--bar);overflow-x:hidden;background:var(--paper)}
+body{font-family:var(--sans);font-weight:400;color:var(--ink);background:var(--paper);line-height:1.6;word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--red);color:var(--paper)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.mono{font-family:var(--mono)}
+h1,h2,h3{font-family:var(--disp);font-weight:800;line-height:1.02;letter-spacing:-.02em;text-transform:uppercase}
+.eyebrow{font-family:var(--mono);font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red-d)}
+/* buttons — angular */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:50px;padding:0 24px;font-family:var(--mono);font-weight:700;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;border:2px solid var(--line);color:var(--ink);background:transparent;border-radius:0;transition:transform .15s var(--ease),background .18s,color .18s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--line)}
+.btn:active{transform:none;box-shadow:none}
+.btn-red{background:var(--red-d);border-color:var(--red-d);color:var(--paper)}
+.btn-red:hover{box-shadow:4px 4px 0 var(--line)}
+.btn-green{background:var(--green);border-color:var(--green);color:var(--paper)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+/* header */
+.hdr{position:fixed;inset:0 0 auto;z-index:100;height:var(--bar);background:var(--paper);border-bottom:2px solid var(--line);transition:box-shadow .3s}
+.hdr.scrolled{box-shadow:0 6px 0 -3px rgba(42,32,19,.12)}
+.hdr-in{height:var(--bar);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
+.brand .n{background:var(--red-d);color:var(--paper);font-size:1.15rem;line-height:1;padding:5px 8px 4px}
+.brand .w{font-size:1.15rem;letter-spacing:.02em}
+.nav{display:none;gap:28px;align-items:center}
+.nav a{font-family:var(--mono);font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);transition:color .18s}
+.nav a:hover{color:var(--red-d)}
+.nav .ig{border:2px solid var(--line);padding:8px 14px;color:var(--ink)}
+.nav .ig:hover{background:var(--line);color:var(--paper)}
+.burger{display:inline-flex;flex-direction:column;gap:5px;width:44px;height:44px;align-items:center;justify-content:center;background:none;border:0;cursor:pointer}
+.burger span{width:24px;height:2.6px;background:var(--ink);transition:.3s}
+.drawer{position:fixed;inset:0;z-index:120;background:var(--green);color:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;visibility:hidden;transition:.32s}
+.drawer.open{opacity:1;visibility:visible}
+.drawer a{font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:2rem;color:var(--paper);padding:6px 12px;letter-spacing:-.01em}
+.drawer a:hover{color:var(--orange)}
+.dx{position:absolute;top:18px;right:20px;width:46px;height:46px;background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--paper)}
+/* status ticker */
+.ticker{background:var(--green);color:var(--paper);font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:8px 16px;border-bottom:2px solid var(--line)}
+.ticker b{color:var(--paper);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1.5px}
+/* hero */
+.hero{padding:calc(var(--bar) + 30px) 0 44px;border-bottom:2px solid var(--line)}
+.hero-in{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+.hero .eyebrow{display:inline-block;margin-bottom:16px}
+.hero h1{font-size:clamp(3rem,11vw,6.6rem);font-weight:900;letter-spacing:-.03em}
+.hero h1 em{font-style:normal;color:var(--red-d);display:block}
+.hero .lead{margin-top:20px;font-size:clamp(1rem,2.3vw,1.16rem);color:var(--ink2);max-width:34rem;line-height:1.65}
+.hero-cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+.hero-media{position:relative;border:2px solid var(--line);background:var(--card)}
+.hero-media img{width:100%;aspect-ratio:4/4.3;object-fit:cover}
+.hero-media .tagstrip{position:absolute;left:0;bottom:0;right:0;background:var(--red-d);color:var(--paper);font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;display:flex;justify-content:space-between;gap:10px;border-top:2px solid var(--line)}
+/* marquee */
+.marq{background:var(--red-d);color:var(--paper);border-bottom:2px solid var(--line);overflow:hidden;white-space:nowrap}
+.marq-in{display:inline-flex;gap:0;animation:scroll 26s linear infinite;will-change:transform}
+.marq span{font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:1.05rem;letter-spacing:.02em;padding:12px 26px;display:inline-flex;align-items:center}
+.marq span::after{content:"★";margin-left:26px;color:var(--orange);font-size:.8rem}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* section frame */
+.sec{padding:76px 0;border-bottom:2px solid var(--line)}
+.sec-head{max-width:52rem}
+.sec-head .eyebrow{display:block;margin-bottom:14px}
+.sec-head h2{font-size:clamp(2.1rem,6vw,3.7rem);font-weight:900}
+.sec-head p{margin-top:16px;color:var(--ink2);max-width:40rem;line-height:1.7}
+/* craft */
+.craft-grid{display:grid;grid-template-columns:1fr;gap:36px;margin-top:44px;align-items:start}
+.craft-media{border:2px solid var(--line);background:var(--card)}
+.craft-media img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.craft-copy p{color:var(--ink2);margin-bottom:16px;line-height:1.75}
+.craft-copy p b{color:var(--ink);font-weight:700}
+.specs{margin-top:6px;border-top:2px solid var(--line)}
+.spec{display:flex;align-items:baseline;gap:18px;padding:16px 0;border-bottom:1px solid var(--line-soft)}
+.spec .num{font-family:var(--disp);font-weight:900;font-size:2rem;line-height:1;color:var(--red-d);min-width:88px}
+.spec .t{font-family:var(--mono);font-size:.82rem;letter-spacing:.02em;color:var(--ink);text-transform:uppercase;font-weight:700}
+.spec .t s{display:block;font-family:var(--sans);text-transform:none;letter-spacing:0;font-weight:400;color:var(--ink2);font-size:.9rem;margin-top:4px;text-decoration:none}
+/* menu / gallery */
+.ggrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:44px;grid-auto-flow:dense}
+.gfig{position:relative;overflow:hidden;border:2px solid var(--line);background:var(--card);aspect-ratio:1}
+.gfig img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gfig:hover img{transform:scale(1.05)}
+.gfig figcaption{position:absolute;left:0;bottom:0;background:var(--paper);color:var(--ink);font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-top:2px solid var(--line);border-right:2px solid var(--line)}
+.menu-note{margin-top:22px;font-family:var(--mono);font-size:.8rem;color:var(--ink2);letter-spacing:.02em}
+.menu-note a{color:var(--red-d);font-weight:700;border-bottom:1.5px solid var(--red-d)}
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr;gap:30px;margin-top:44px;align-items:start}
+.vcard{border:2px solid var(--line);background:var(--card)}
+.vrow{display:flex;gap:16px;padding:18px 22px;border-bottom:1px solid var(--line-soft)}
+.vrow:last-child{border-bottom:0}
+.vrow .k{flex:none;min-width:78px;font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red-d);padding-top:3px}
+.vrow .v{color:var(--ink);font-size:1rem;line-height:1.55}
+.vrow .v s{display:block;color:var(--ink2);font-size:.86rem;margin-top:4px;text-decoration:none}
+.visit-cta{display:flex;flex-wrap:wrap;gap:12px;padding:18px 22px}
+.visit-media{border:2px solid var(--line);background:var(--card)}
+.visit-media img{width:100%;aspect-ratio:3/3.5;object-fit:cover}
+/* channels */
+.chan{display:grid;grid-template-columns:1fr;gap:0;margin-top:44px;border:2px solid var(--line)}
+.chan a{display:flex;align-items:center;gap:16px;padding:22px 24px;border-bottom:2px solid var(--line);font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:1.2rem;letter-spacing:-.01em;transition:background .18s,color .18s}
+.chan a:last-child{border-bottom:0}
+.chan a:hover{background:var(--red-d);color:var(--paper)}
+.chan a .ico{width:26px;height:26px;flex:none;display:flex;align-items:center;justify-content:center}
+.chan a .ico svg{width:24px;height:24px}
+.chan a .meta{margin-left:auto;font-family:var(--mono);font-size:.76rem;font-weight:400;letter-spacing:.04em;text-transform:none;color:var(--ink2)}
+.chan a:hover .meta{color:var(--paper)}
+/* footer */
+.foot{background:var(--green);color:var(--paper);padding:56px 0 40px}
+.foot .fmk{font-family:var(--disp);font-weight:900;text-transform:uppercase;font-size:2.4rem;letter-spacing:-.02em;display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.foot .fmk .n{background:var(--red-d);padding:4px 10px 2px}
+.foot .fgrid{display:grid;grid-template-columns:1fr;gap:20px;font-size:.92rem;line-height:1.7}
+.foot .fgrid b{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);display:block;margin-bottom:6px}
+.foot a{border-bottom:1px solid rgba(239,228,206,.4)}
+.foot .fbot{margin-top:36px;padding-top:18px;border-top:1px solid rgba(239,228,206,.25);font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:rgba(239,228,206,.7);text-transform:uppercase}
+/* mobile quickbar */
+.qbar{position:fixed;left:0;right:0;bottom:0;z-index:95;display:none;gap:0;background:var(--paper);border-top:2px solid var(--line)}
+.qbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;height:52px;font-family:var(--mono);font-weight:700;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;padding-bottom:env(safe-area-inset-bottom)}
+.qbar a+a{border-left:2px solid var(--line)}
+.qbar .q1{background:var(--ink);color:var(--paper)}
+.qbar .q2{background:var(--red-d);color:var(--paper)}
+/* reveal (forced) */
+html.js .rv{opacity:0;transform:translateY(20px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+/* desktop */
+@media(min-width:860px){
+ .nav{display:flex}.burger{display:none}
+ .hero-in{grid-template-columns:1.15fr .85fr;gap:56px}
+ .craft-grid{grid-template-columns:.9fr 1.1fr;gap:56px}
+ .ggrid{grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:16px}
+ .gfig{aspect-ratio:auto}.gfig.feat2{grid-column:span 2;grid-row:span 2}
+ .visit-grid{grid-template-columns:1.1fr .9fr;gap:44px}
+ .chan{grid-template-columns:1fr 1fr}
+ .chan a{border-right:2px solid var(--line)}
+ .chan a:nth-child(2n){border-right:0}
+ .foot .fgrid{grid-template-columns:2fr 1fr 1fr}
+ .qbar{display:none!important}
+}
+@media(max-width:859px){.qbar{display:flex}.foot{margin-bottom:52px}}
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=' js'</script>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top" aria-label="214 Donuts home">
+      <span class="n">214</span><span class="w">Donuts</span>
+    </a>
+    <nav class="nav">
+      <a href="#craft">Craft</a>
+      <a href="#donuts">Doughnuts</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact">Contact</a>
+      <a class="ig" href="https://www.instagram.com/214_donuts/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-controls="drawer" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <button class="dx" id="dx" aria-label="Close menu">&times;</button>
+  <a href="#craft">Craft</a>
+  <a href="#donuts">Doughnuts</a>
+  <a href="#visit">Visit</a>
+  <a href="#contact">Contact</a>
+  <a href="https://www.instagram.com/214_donuts/" target="_blank" rel="noopener">Instagram</a>
+</div>
+
+<!-- HERO -->
+<section id="top">
+  <div class="ticker">Currently relocating — <b>reopening mid-September</b> · follow Instagram for the new address</div>
+  <div class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-txt rv">
+        <span class="eyebrow">Chuncheon · Bakery &amp; Coffee · Est.</span>
+        <h1>Doughnuts,<em>from scratch.</em></h1>
+        <p class="lead">Small-batch filled doughnuts, fried fresh every morning. No instant mixes, no shortcuts — just domestic flour, cultured butter, and a dough we cold-ferment for sixteen hours. Made and sold the same day.</p>
+        <div class="hero-cta">
+          <a class="btn btn-red" href="#donuts">See the doughnuts</a>
+          <a class="btn" href="#visit">Find us</a>
+        </div>
+      </div>
+      <div class="hero-media rv">
+        <img src="dn-hero.webp" alt="A red 214 Donuts box filled with sugar-dusted cream doughnuts" fetchpriority="high">
+        <div class="tagstrip"><span>214 Donuts</span><span>Chuncheon</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marq" aria-hidden="true">
+  <div class="marq-in">
+    <span>Filled Fresh</span><span>Cold-Fermented 16 Hrs</span><span>No Instant Mix</span><span>Cultured Butter</span><span>Sold Same Day</span><span>Doughnuts From 11AM</span>
+    <span>Filled Fresh</span><span>Cold-Fermented 16 Hrs</span><span>No Instant Mix</span><span>Cultured Butter</span><span>Sold Same Day</span><span>Doughnuts From 11AM</span>
+  </div>
+</div>
+
+<!-- CRAFT -->
+<section class="sec" id="craft">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">The Craft</span>
+      <h2>Made from scratch, sold same day</h2>
+      <p>Every morning starts with fresh ingredients, real toppings, and a little happiness folded into the dough. We don't use instant doughnut mixes — and we never keep yesterday's batch.</p>
+    </div>
+    <div class="craft-grid">
+      <div class="craft-media rv"><img src="dn-craft.webp" alt="A filled doughnut cut open to show the cream centre, set against a vintage advert"></div>
+      <div class="craft-copy rv">
+        <p>We build our dough from <b>domestic milled flour, antibiotic-free eggs, and fresh cultured butter and milk</b>, then let it rest in a low-temperature cold ferment for more than sixteen hours. That slow proof is what gives each doughnut its light, pillowy crumb.</p>
+        <p>Doughnuts are <b>fried, filled and finished by hand</b> every day, then sold the same day they're made. Fresh doughnuts are ready from <b>11am</b> — come early for the full lineup.</p>
+        <div class="specs">
+          <div class="spec"><span class="num">16h</span><span class="t">Cold-fermented dough<s>Slow low-temperature proof for a lighter crumb</s></span></div>
+          <div class="spec"><span class="num">11am</span><span class="t">Fresh out daily<s>Fried and filled the morning you visit</s></span></div>
+          <div class="spec"><span class="num">0</span><span class="t">Instant mixes<s>Made from scratch, sold the same day</s></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOUGHNUTS -->
+<section class="sec" id="donuts">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">The Counter</span>
+      <h2>Today's doughnuts</h2>
+      <p>Cream-filled, glaze-dipped and dusted — the lineup rotates with what's fresh. Here's a taste of the counter.</p>
+    </div>
+    <div class="ggrid rv">
+      <figure class="gfig feat2"><img src="dn-biscoff.webp" alt="A cream-filled doughnut topped with a Biscoff biscuit on a yellow plate" loading="lazy"><figcaption>Cream · Filled</figcaption></figure>
+      <figure class="gfig"><img src="dn-box.webp" alt="A box of assorted 214 doughnuts" loading="lazy"><figcaption>By the box</figcaption></figure>
+      <figure class="gfig"><img src="dn-sign.webp" alt="The 214 Donut open sign outside the shop" loading="lazy"><figcaption>Open</figcaption></figure>
+      <figure class="gfig"><img src="dn-interior.webp" alt="Inside the shop with a retro dessert sign and vintage adverts" loading="lazy"><figcaption>The room</figcaption></figure>
+      <figure class="gfig"><img src="dn-craft.webp" alt="A doughnut cut open to reveal the filling" loading="lazy"><figcaption>Filled fresh</figcaption></figure>
+    </div>
+    <p class="menu-note">Flavours rotate daily and sell out fast — check <a href="https://www.instagram.com/214_donuts/" target="_blank" rel="noopener">@214_donuts</a> for today's lineup.</p>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="sec" id="visit">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Visit</span>
+      <h2>Come by</h2>
+      <p>214 Donuts is moving to a new home nearby. We reopen mid-September — the details below are our Chuncheon base; follow Instagram for the confirmed new address.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="rv">
+        <div class="vcard">
+          <div class="vrow"><span class="k">Address</span><span class="v">강원특별자치도 춘천시 서부대성로 196, 1층<s>Seobudaeseong-ro 196, 1F · Chuncheon</s></span></div>
+          <div class="vrow"><span class="k">Hours</span><span class="v">Reopening mid-September<s>Doughnuts fresh from 11am · check Instagram for daily hours</s></span></div>
+          <div class="vrow"><span class="k">Phone</span><span class="v">0507-1490-1643</span></div>
+          <div class="vrow"><span class="k">More</span><span class="v">Bakery &amp; coffee · we bake bread every day</span></div>
+          <div class="visit-cta">
+            <a class="btn btn-green" href="https://map.naver.com/p/entry/place/1908467449" target="_blank" rel="noopener">Naver Map</a>
+            <a class="btn" href="tel:0507-1490-1643">Call</a>
+          </div>
+        </div>
+      </div>
+      <div class="visit-media rv"><img src="dn-window.webp" alt="View from inside 214 Donuts through the window decal at dusk" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / CHANNELS -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Contact</span>
+      <h2>Say hello</h2>
+      <p>New flavours, boxes and reopening news land on Instagram first.</p>
+    </div>
+    <div class="chan rv">
+      <a href="https://www.instagram.com/214_donuts/" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span>
+        Instagram<span class="meta">@214_donuts</span>
+      </a>
+      <a href="tel:0507-1490-1643">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5c0 9 6 15 15 15l-.5-4-4-1-2 2c-2.5-1.4-4.6-3.5-6-6l2-2-1-4z"/></svg></span>
+        Call<span class="meta">0507-1490-1643</span>
+      </a>
+      <a href="https://map.naver.com/p/entry/place/1908467449" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.5 7-11a7 7 0 1 0-14 0c0 4.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        Naver Map<span class="meta">Chuncheon</span>
+      </a>
+      <a href="https://www.instagram.com/214_donuts/" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></span>
+        Reopening news<span class="meta">Follow along</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="fmk"><span class="n">214</span>Donuts</div>
+    <div class="fgrid">
+      <div><b>Where</b>강원특별자치도 춘천시 서부대성로 196, 1층<br>Seobudaeseong-ro 196, 1F · Chuncheon · <a href="https://map.naver.com/p/entry/place/1908467449" target="_blank" rel="noopener">Naver Map</a></div>
+      <div><b>Hours</b>Reopening mid-Sept<br>Doughnuts from 11am</div>
+      <div><b>Contact</b><a href="tel:0507-1490-1643">0507-1490-1643</a><br><a href="https://www.instagram.com/214_donuts/" target="_blank" rel="noopener">@214_donuts</a></div>
+    </div>
+    <div class="fbot">214 Donuts · Small-batch filled doughnuts · Made from scratch, sold same day</div>
+  </div>
+</footer>
+
+<!-- mobile quickbar -->
+<div class="qbar">
+  <a class="q1" href="tel:0507-1490-1643">Call</a>
+  <a class="q2" href="https://www.instagram.com/214_donuts/" target="_blank" rel="noopener">Instagram</a>
+</div>
+
+<noscript><style>.rv{opacity:1!important;transform:none!important}.marq-in{animation:none!important}</style></noscript>
+<script>
+(function(){
+  var hdr=document.getElementById('hdr');
+  addEventListener('scroll',function(){hdr.classList.toggle('scrolled',scrollY>8)},{passive:true});
+  var b=document.getElementById('burger'),dw=document.getElementById('drawer'),dx=document.getElementById('dx');
+  function op(){dw.classList.add('open');b.setAttribute('aria-expanded','true')}
+  function cl(){dw.classList.remove('open');b.setAttribute('aria-expanded','false')}
+  b.addEventListener('click',op);dx.addEventListener('click',cl);
+  dw.querySelectorAll('a').forEach(function(a){a.addEventListener('click',cl)});
+  addEventListener('keydown',function(e){if(e.key==='Escape')cl()});
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.1});
+    rvs.forEach(function(el){io.observe(el)});
+    setTimeout(function(){rvs.forEach(function(el){el.classList.add('in')})},1500);
+  }else{rvs.forEach(function(el){el.classList.add('in')})}
+  var HEAD=70;
+  function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
+  function smoothTo(y,dur){var s=window.pageYOffset,d=y-s,t0=null,done=false;if(Math.abs(d)<2){window.scrollTo(0,y);return}function step(ts){if(t0===null)t0=ts;var p=Math.min((ts-t0)/dur,1);window.scrollTo(0,s+d*ease(p));if(p<1){requestAnimationFrame(step)}else{done=true}}requestAnimationFrame(step);setTimeout(function(){if(!done)window.scrollTo(0,y)},dur+400)}
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){var id=a.getAttribute('href');if(!id||id.length<2)return;var el=document.querySelector(id);if(!el)return;e.preventDefault();var y=Math.max(0,el.getBoundingClientRect().top+window.pageYOffset-HEAD);smoothTo(y,640);if(history.pushState){history.pushState(null,'',id)}});
+  });
+})();
+</script>
+</body>
+</html>
