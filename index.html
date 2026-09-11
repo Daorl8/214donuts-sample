@@ -23,7 +23,7 @@
 :root{
  --paper:#EFE4CE; --paper2:#E7D8BB; --card:#F6EFDE; --card2:#F0E6CF;
  --ink:#22190F; --ink2:#5A4C38; --faint:#8C7B60;
- --red:#C5372C; --red-d:#A5271E; --green:#2E5A3B; --green-d:#22452D;
+ --red:#C5372C; --red-d:#A5271E; --yellow:#F3C42E; --yellow-d:#E3A81E;
  --tan:#B58748; --orange:#E08A2B;
  --line:#4A3A28; --line-soft:#D8C7A4;
  --bar:70px; --ease:cubic-bezier(.4,0,.15,1);
@@ -47,7 +47,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.05;letter-spacing
 .btn:active{transform:none;box-shadow:none}
 .btn-red{background:var(--red-d);border-color:var(--red-d);color:var(--paper)}
 .btn-red:hover{box-shadow:4px 4px 0 var(--line)}
-.btn-green{background:var(--green);border-color:var(--green);color:var(--paper)}
+.btn-yellow{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
 .btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 /* header */
 .hdr{position:fixed;inset:0 0 auto;z-index:100;height:var(--bar);background:var(--paper);border-bottom:2px solid var(--line);transition:box-shadow .3s}
@@ -63,14 +63,14 @@ h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.05;letter-spacing
 .nav .ig:hover{background:var(--line);color:var(--paper)}
 .burger{display:inline-flex;flex-direction:column;gap:5px;width:44px;height:44px;align-items:center;justify-content:center;background:none;border:0;cursor:pointer}
 .burger span{width:24px;height:2.6px;background:var(--ink);transition:.3s}
-.drawer{position:fixed;inset:0;z-index:120;background:var(--green);color:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;visibility:hidden;transition:.32s}
+.drawer{position:fixed;inset:0;z-index:120;background:var(--yellow);color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;visibility:hidden;transition:.32s}
 .drawer.open{opacity:1;visibility:visible}
-.drawer a{font-family:var(--disp);font-weight:600;font-style:italic;font-size:2.2rem;color:var(--paper);padding:6px 12px;letter-spacing:-.01em}
-.drawer a:hover{color:var(--orange)}
-.dx{position:absolute;top:18px;right:20px;width:46px;height:46px;background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--paper)}
+.drawer a{font-family:var(--disp);font-weight:600;font-style:italic;font-size:2.2rem;color:var(--ink);padding:6px 12px;letter-spacing:-.01em}
+.drawer a:hover{color:var(--red-d)}
+.dx{position:absolute;top:18px;right:20px;width:46px;height:46px;background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--ink)}
 /* status ticker */
-.ticker{background:var(--green);color:var(--paper);font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:8px 16px;border-bottom:2px solid var(--line)}
-.ticker b{color:var(--paper);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1.5px}
+.ticker{background:var(--yellow);color:var(--ink);font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:8px 16px;border-bottom:2px solid var(--line)}
+.ticker b{color:var(--red-d);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1.5px}
 /* hero */
 .hero{padding:calc(var(--bar) + 30px) 0 44px;border-bottom:2px solid var(--line)}
 .hero-in{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
@@ -136,13 +136,13 @@ h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.05;letter-spacing
 .chan a .meta{margin-left:auto;font-family:var(--mono);font-size:.76rem;font-weight:400;letter-spacing:.04em;text-transform:none;color:var(--ink2)}
 .chan a:hover .meta{color:var(--paper)}
 /* footer */
-.foot{background:var(--green);color:var(--paper);padding:56px 0 40px}
+.foot{background:var(--yellow);color:var(--ink);padding:56px 0 40px}
 .foot .fmk{font-family:var(--disp);font-weight:700;font-style:italic;font-size:2.6rem;letter-spacing:-.01em;display:flex;align-items:center;gap:12px;margin-bottom:20px}
 .foot .fmk .n{background:var(--red-d);font-family:var(--sans);font-style:normal;font-weight:800;font-size:1.9rem;padding:5px 11px 3px}
 .foot .fgrid{display:grid;grid-template-columns:1fr;gap:20px;font-size:.92rem;line-height:1.7}
-.foot .fgrid b{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);display:block;margin-bottom:6px}
-.foot a{border-bottom:1px solid rgba(239,228,206,.4)}
-.foot .fbot{margin-top:36px;padding-top:18px;border-top:1px solid rgba(239,228,206,.25);font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:rgba(239,228,206,.7);text-transform:uppercase}
+.foot .fgrid b{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red-d);display:block;margin-bottom:6px}
+.foot a{border-bottom:1px solid rgba(34,25,15,.32)}
+.foot .fbot{margin-top:36px;padding-top:18px;border-top:1px solid rgba(34,25,15,.2);font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:rgba(34,25,15,.62);text-transform:uppercase}
 /* mobile quickbar */
 .qbar{position:fixed;left:0;right:0;bottom:0;z-index:95;display:none;gap:0;background:var(--paper);border-top:2px solid var(--line)}
 .qbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;height:52px;font-family:var(--mono);font-weight:700;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;padding-bottom:env(safe-area-inset-bottom)}
@@ -278,7 +278,7 @@ html.js .rv.in{opacity:1;transform:none}
           <div class="vrow"><span class="k">Phone</span><span class="v">0507-1490-1643</span></div>
           <div class="vrow"><span class="k">More</span><span class="v">Bakery &amp; coffee · we bake bread every day</span></div>
           <div class="visit-cta">
-            <a class="btn btn-green" href="https://map.naver.com/p/entry/place/1908467449" target="_blank" rel="noopener">Naver Map</a>
+            <a class="btn btn-yellow" href="https://map.naver.com/p/entry/place/1908467449" target="_blank" rel="noopener">Naver Map</a>
             <a class="btn" href="tel:0507-1490-1643">Call</a>
           </div>
         </div>
