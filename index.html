@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://214donuts.pages.dev/">
 <link rel="canonical" href="https://214donuts.pages.dev/">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Syne:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23C5372C'/%3E%3Ctext x='16' y='22' font-family='Archivo,Arial,sans-serif' font-size='15' font-weight='900' text-anchor='middle' fill='%23EFE4CE'%3E214%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
@@ -27,7 +27,7 @@
  --tan:#B58748; --orange:#E08A2B;
  --line:#2A2013; --line-soft:#D8C7A4;
  --bar:70px; --ease:cubic-bezier(.4,0,.15,1);
- --disp:'Archivo','Pretendard Variable',system-ui,sans-serif;
+ --disp:'Syne','Pretendard Variable',system-ui,sans-serif;
  --sans:'Archivo','Pretendard Variable',system-ui,-apple-system,sans-serif;
  --mono:'Space Mono','Courier New',monospace;
 }
@@ -53,7 +53,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:800;line-height:1.02;letter-spacing
 .hdr{position:fixed;inset:0 0 auto;z-index:100;height:var(--bar);background:var(--paper);border-bottom:2px solid var(--line);transition:box-shadow .3s}
 .hdr.scrolled{box-shadow:0 6px 0 -3px rgba(42,32,19,.12)}
 .hdr-in{height:var(--bar);display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:800;text-transform:uppercase;letter-spacing:-.01em}
 .brand .n{background:var(--red-d);color:var(--paper);font-size:1.15rem;line-height:1;padding:5px 8px 4px}
 .brand .w{font-size:1.15rem;letter-spacing:.02em}
 .nav{display:none;gap:28px;align-items:center}
@@ -75,24 +75,18 @@ h1,h2,h3{font-family:var(--disp);font-weight:800;line-height:1.02;letter-spacing
 .hero{padding:calc(var(--bar) + 30px) 0 44px;border-bottom:2px solid var(--line)}
 .hero-in{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
 .hero .eyebrow{display:inline-block;margin-bottom:16px}
-.hero h1{font-size:clamp(3rem,11vw,6.6rem);font-weight:900;letter-spacing:-.03em}
+.hero h1{font-size:clamp(3rem,11vw,6.6rem);font-weight:800;letter-spacing:-.03em}
 .hero h1 em{font-style:normal;color:var(--red-d);display:block}
 .hero .lead{margin-top:20px;font-size:clamp(1rem,2.3vw,1.16rem);color:var(--ink2);max-width:34rem;line-height:1.65}
 .hero-cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
 .hero-media{position:relative;border:2px solid var(--line);background:var(--card)}
 .hero-media img{width:100%;aspect-ratio:4/4.3;object-fit:cover}
 .hero-media .tagstrip{position:absolute;left:0;bottom:0;right:0;background:var(--red-d);color:var(--paper);font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;display:flex;justify-content:space-between;gap:10px;border-top:2px solid var(--line)}
-/* marquee */
-.marq{background:var(--red-d);color:var(--paper);border-bottom:2px solid var(--line);overflow:hidden;white-space:nowrap}
-.marq-in{display:inline-flex;gap:0;animation:scroll 26s linear infinite;will-change:transform}
-.marq span{font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:1.05rem;letter-spacing:.02em;padding:12px 26px;display:inline-flex;align-items:center}
-.marq span::after{content:"★";margin-left:26px;color:var(--orange);font-size:.8rem}
-@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 /* section frame */
 .sec{padding:76px 0;border-bottom:2px solid var(--line)}
 .sec-head{max-width:52rem}
 .sec-head .eyebrow{display:block;margin-bottom:14px}
-.sec-head h2{font-size:clamp(2.1rem,6vw,3.7rem);font-weight:900}
+.sec-head h2{font-size:clamp(2.1rem,6vw,3.7rem);font-weight:800}
 .sec-head p{margin-top:16px;color:var(--ink2);max-width:40rem;line-height:1.7}
 /* craft */
 .craft-grid{display:grid;grid-template-columns:1fr;gap:36px;margin-top:44px;align-items:start}
@@ -102,7 +96,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:800;line-height:1.02;letter-spacing
 .craft-copy p b{color:var(--ink);font-weight:700}
 .specs{margin-top:6px;border-top:2px solid var(--line)}
 .spec{display:flex;align-items:baseline;gap:18px;padding:16px 0;border-bottom:1px solid var(--line-soft)}
-.spec .num{font-family:var(--disp);font-weight:900;font-size:2rem;line-height:1;color:var(--red-d);min-width:88px}
+.spec .num{font-family:var(--disp);font-weight:800;font-size:2rem;line-height:1;color:var(--red-d);min-width:88px}
 .spec .t{font-family:var(--mono);font-size:.82rem;letter-spacing:.02em;color:var(--ink);text-transform:uppercase;font-weight:700}
 .spec .t s{display:block;font-family:var(--sans);text-transform:none;letter-spacing:0;font-weight:400;color:var(--ink2);font-size:.9rem;margin-top:4px;text-decoration:none}
 /* menu / gallery */
@@ -135,7 +129,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:800;line-height:1.02;letter-spacing
 .chan a:hover .meta{color:var(--paper)}
 /* footer */
 .foot{background:var(--green);color:var(--paper);padding:56px 0 40px}
-.foot .fmk{font-family:var(--disp);font-weight:900;text-transform:uppercase;font-size:2.4rem;letter-spacing:-.02em;display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.foot .fmk{font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:2.4rem;letter-spacing:-.02em;display:flex;align-items:center;gap:10px;margin-bottom:20px}
 .foot .fmk .n{background:var(--red-d);padding:4px 10px 2px}
 .foot .fgrid{display:grid;grid-template-columns:1fr;gap:20px;font-size:.92rem;line-height:1.7}
 .foot .fgrid b{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);display:block;margin-bottom:6px}
@@ -216,14 +210,6 @@ html.js .rv.in{opacity:1;transform:none}
     </div>
   </div>
 </section>
-
-<!-- MARQUEE -->
-<div class="marq" aria-hidden="true">
-  <div class="marq-in">
-    <span>Filled Fresh</span><span>Cold-Fermented 16 Hrs</span><span>No Instant Mix</span><span>Cultured Butter</span><span>Sold Same Day</span><span>Doughnuts From 11AM</span>
-    <span>Filled Fresh</span><span>Cold-Fermented 16 Hrs</span><span>No Instant Mix</span><span>Cultured Butter</span><span>Sold Same Day</span><span>Doughnuts From 11AM</span>
-  </div>
-</div>
 
 <!-- CRAFT -->
 <section class="sec" id="craft">
@@ -341,7 +327,7 @@ html.js .rv.in{opacity:1;transform:none}
   <a class="q2" href="https://www.instagram.com/214_donuts/" target="_blank" rel="noopener">Instagram</a>
 </div>
 
-<noscript><style>.rv{opacity:1!important;transform:none!important}.marq-in{animation:none!important}</style></noscript>
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
 <script>
 (function(){
   var hdr=document.getElementById('hdr');
